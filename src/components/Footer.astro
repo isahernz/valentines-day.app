@@ -1,26 +1,21 @@
 ---
+import LinkSocial from "./../components/LinkSocial.astro";
 const currentYear = new Date().getFullYear();
 ---
 
 <footer
   class="text-[10px] text-center flex flex-col py-6 sm:text-start text-pretty"
 >
-  <div>
+  <p>
     © {currentYear}
-    <a
-      href="https://github.com/isahernz/valentines-day.app"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="hover:underline"
-      >Liebe Verbindet.
-    </a>
-    Desarrollado con ❤️ por Angy y <a
-      href="https://github.com/isahernz"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="hover:underline">Brandon</a
-    >.
-  </div>
+    <LinkSocial
+      url="https://github.com/isahernz/valentines-day.app"
+      text="Liebe Verbindet"
+    />. Desarrollado con ❤️ por
+    <LinkSocial url="https://github.com/isahernz" text="Angy" />
+    <span>y</span>
+    <LinkSocial url="https://github.com/isahernz" text="Brandon" />
+  </p>
   <span
     >Desde San José Chiapa, Puebla Ciudad Modelo, para todo el mundo. 🌎</span
   >
