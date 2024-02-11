@@ -1,0 +1,25 @@
+---
+import DownloadButton from "./DownloadButton.jsx";
+import Span from "./SpanText.astro";
+import AndroidBagde from "./AndroidBagde.astro";
+---
+
+<section class="flex flex-col gap-6 lg:max-w-2xl">
+  <h1 class="text-3xl font-bold xs:text-4xl text-pretty lg:text-6xl">
+    Una app hecha con <Span text="Amor" /> y <Span text="Realidad Aumentada" /> que
+    une nuestros corazones. 🩷
+  </h1>
+
+  <p class="text-balance lg:text-pretty lg:text-lg">
+    Disfruta la experiencia de un hermoso detalle hecho con amor a través de
+    Realidad Aumentada. Para comenzar, descarga nuestra aplicación a través de
+    nuestra página web o bien escanea el código QR.
+  </p>
+
+  <div
+    class="flex flex-wrap justify-center sm:justify-start items-center gap-6"
+  >
+    <DownloadButton text="Descargar Apk" />
+    <AndroidBagde />
+  </div>
+</section>
