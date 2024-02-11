@@ -1,6 +1,5 @@
 ---
 import "@fontsource-variable/outfit";
-import Waves from "../utils/Waves.astro";
 ---
 
 <!doctype html>
@@ -20,9 +19,6 @@ import Waves from "../utils/Waves.astro";
       class="flex flex-col justify-center lg:pt-16 lg:justify-start h-dvh relative mx-auto sm:max-w-xl lg:max-w-4xl xl:max-w-5xl"
     >
       <slot />
-    </div>
-    <div class="absolute bottom-0 w-full opacity-40 overflow-y-hidden -z-10">
-      <Waves />
     </div>
   </body>
 </html>
