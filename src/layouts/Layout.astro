@@ -1,0 +1,39 @@
+---
+import "@fontsource-variable/outfit";
+import Waves from "../utils/Waves.astro";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A beutiful Valentine Day App with Augmented Reality</title>
+  </head>
+  <body>
+    <div
+      class="absolute top-0 -z-10 h-screen w-screen rotate-180 transform bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)]"
+    >
+    </div>
+    <div
+      class="flex flex-col justify-center h-dvh relative mx-auto sm:max-w-xl lg:max-w-4xl xl:max-w-5xl"
+    >
+      <slot />
+    </div>
+    <div class="absolute bottom-0 w-full opacity-40 overflow-y-hidden -z-10">
+      <Waves />
+    </div>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    color-scheme: light dark;
+
+    body {
+      font-family: "Outfit Variable", sans-serif;
+      color: #242422;
+    }
+  }
+</style>
