@@ -1,14 +1,26 @@
 ---
 import "@fontsource-variable/outfit";
+interface Props {
+  description: string;
+  title: string;
+  urlImage: string;
+}
+
+const { description, title, urlImage } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A beutiful Valentine Day App with Augmented Reality</title>
+    <meta property="og:image" content={urlImage} />
+    <meta name="robots" content="index, follow" />
+    <title>
+      {title}
+    </title>
   </head>
   <body class="relative">
     <div
