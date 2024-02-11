@@ -1,0 +1,13 @@
+---
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+---
+
+<span
+  class="animate-text-gradient bg-gradient-to-r from-[#A3004C] via-[#F00070] to-[#520026] bg-[200%_auto] bg-clip-text font-bold text-transparent"
+>
+  {text}
+</span>
