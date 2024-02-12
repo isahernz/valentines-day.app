@@ -3,6 +3,7 @@ import Layout from "./../layouts/Layout.astro";
 import Hero from "./../components/Hero.astro";
 import Banner from "./../components/Banner.astro";
 import Footer from "./../components/Footer.astro";
+import QR from "../components/QR.astro";
 ---
 
 <Layout
@@ -12,9 +13,10 @@ import Footer from "./../components/Footer.astro";
 >
   <Hero />
   <main
-    class="flex flex-col lg:px-0 lg:flex-row lg:justify-between lg:items-center"
+    class="flex flex-col lg:px-0 lg:flex-row lg:items-center lg:justify-between relative"
   >
     <Banner />
+    <QR />
   </main>
   <Footer />
 </Layout>
