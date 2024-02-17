@@ -2,6 +2,7 @@
 import DownloadButton from "./DownloadButton.jsx";
 import Span from "./SpanText.astro";
 import AndroidBagde from "./AndroidBagde.astro";
+import ResourcesButton from "./ResourcesButton.astro";
 ---
 
 <section class="flex flex-col gap-6 lg:max-w-2xl">
@@ -17,7 +18,10 @@ import AndroidBagde from "./AndroidBagde.astro";
   </p>
 
   <div class="flex flex-col justify-start xsm:flex-row items-center gap-6">
-    <DownloadButton text="Descargar Apk" />
+    <div class="flex flex-col gap-3 w-full xsm:max-w-max">
+      <DownloadButton text="Descargar Apk" />
+      <ResourcesButton />
+    </div>
     <AndroidBagde />
   </div>
 </section>
